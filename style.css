@@ -1,0 +1,263 @@
+body {
+   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffe9ba;
+  text-align: center;
+}
+
+.header {
+  background-color: #e3a043; /* mostaza */
+  padding: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 2px;
+}
+
+.logo h1 {
+position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.badge {
+ font-family: 'Potta One', cursive;
+ position: relative;
+  z-index: 1;
+  background-color: #c8843a;
+  color: white;
+  padding: 20px 28px;
+  font-weight: 700;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 70px;
+
+}
+.novedades {
+  background: linear-gradient(135deg, #ffda8b, #ffffff);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-nuevo {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-novedades {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.card-nuevo {
+  position: relative;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-nuevo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card-nuevo img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #555;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e3a043;
+}
+
+.etiqueta {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #ff5100;
+  color: white;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  background-color: white;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #e63946;
+}
+.btn-menu {
+  background-color: #e3a043;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-menu:hover {
+  background-color: #c8843a;
+  transform: scale(1.05);
+}
+
+.menu-oculto {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  margin-top: 15px;
+}
+
+.menu-oculto img {
+  width: 300px;   /* o el tamaño que quieras */
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+
+  .header-contenido {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo-img {
+    width: 60px;
+  }
+
+  .logo-texto {
+    justify-content: center;
+  }
+
+}
+@media (max-width: 768px) {
+  .card-nuevo {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.titulo-seccion {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.titulo-seccion::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #ff9a3c;
+  display: block;
+  margin: 10px auto 0 auto;
+  border-radius: 10px;
+}
+.reseñas {
+  padding: 60px 20px;
+}
+
+.form-reseña {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+}
+
+.form-reseña input,
+.form-reseña textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.form-reseña button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fc8f00; /* tu color */
+  color: white;
+  cursor: pointer;
+}
+
+.muro {
+  background: transparent;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.burbuja {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 80%;
+  position: relative;
+}
+
+.burbuja strong {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
